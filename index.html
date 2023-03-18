@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script defer type="module" src="js/controller.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>FakeStore</title>
+</head>
+<body>
+<div class="backdrop" id="backdrop"></div>
+<nav class="nav">
+    <a href="#" class="nav__logo">Fakestore</a>
+    <form id="search-form" class="nav__search">
+        <label for="search-field" class="nav__search-icon"><i class="fas fa-search "></i></label>
+        <input id="search-field" value="" class="input-field" placeholder="Search">
+    </form>
+    <ul class="nav__menu">
+        <li class="nav__menu-item"><a role="button" id="show-all-btn">All</a></li>
+        <li class="nav__menu-item"><a role="button" id="show-trending-btn">Trending</a></li>
+        <li class="nav__menu-item"><a role="button" id="show-category-btn">Categories</a></li>
+    </ul>
+    <button id="hamburger-btn" type="button" class="hamburger">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <button id="show-cart-btn" type="button" class="btn nav__cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="nav__cart-text">Cart</span>
+        <span id="cart-icon" class="nav__cart-count">0</span>
+    </button>
+
+    <ul class="dropdown">
+        <li class="dropdown-item"><a role="button" id="show-electronics-btn">Electronics</a></li>
+        <li class="dropdown-item"><a role="button" id="show-jewelery-btn">Jewelery</a></li>
+        <li class="dropdown-item"><a role="button" id="show-mens-clothing-btn">Men's Clothing</a></li>
+        <li class="dropdown-item"><a role="button" id="show-womens-clothing-btn">Women's Clothing</a></li>
+    </ul>
+</nav>
+
+<div id="overlay"></div>
+<div id="app"></div>
+
+<footer class="footer">
+    <div class="footer__logo">
+        <a href="#" class="nav__logo">Fakestore</a>
+    </div>
+    <div class="footer__contact">
+        <h3 class="footer__contact-title">Contact</h3>
+        <ul class="footer__contact-list">
+            <li class="footer__contact-item">Mail: <a href="mailto:fakemail@mail.com">fakemail@mail.com</a></li>
+            <li class="footer__contact-item">Tel: <a href="tel:+123456789">+123456789</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
